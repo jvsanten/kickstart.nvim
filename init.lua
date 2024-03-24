@@ -91,7 +91,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -550,6 +550,17 @@ require('lazy').setup({
         -- But for many setups, the LSP (`tsserver`) will work just fine
         -- tsserver = {},
         --
+        tsserver = {},
+        java_language_server = {},
+        jsonls = {},
+        yamlls = {},
+        angularls = {},
+        bashls = {},
+        gopls = {},
+        pyright = {},
+        rust_analyzer = {},
+        cssls = {},
+        html = {},
 
         lua_ls = {
           -- cmd = {...},
